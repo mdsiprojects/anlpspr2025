@@ -2,6 +2,8 @@
 UTS MDSI - ANLP Spring 2025
 
 
+> It's recommended that you fork this repo to your own GitHub account for your own use, and to get updates from the original repo once posted.
+
 # Monday 29/09/2025
 
 ## 📘 Intro
