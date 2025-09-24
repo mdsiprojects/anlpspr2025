@@ -208,3 +208,5 @@ __marimo__/
 .conda/
 .github/copilot-instructions.md
 .vscode/settings.json
+.env
+*.env
