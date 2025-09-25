@@ -10,7 +10,6 @@ Monday 29/09/2025
 - [🦙 Using Ollama and Offline Models](#-using-ollama-and-offline-models)
   - [Installation](#installation)
   - [Basic Usage](#basic-usage)
-  - [Python Integration Example](#python-integration-example)
 - [☁️ Getting Azure AI Student Subscription \& Provisioning Services](#️-getting-azure-ai-student-subscription--provisioning-services)
   - [1. Get an Azure for Students Subscription](#1-get-an-azure-for-students-subscription)
   - [2. Provision Azure AI Search (Free Tier)](#2-provision-azure-ai-search-free-tier)
@@ -162,18 +161,6 @@ ollama run llama3
 
 You can interact with the model in your terminal, or use the Ollama API to connect from Python or other tools.
 
-### Python Integration Example
-
-You can use the `ollama` Python package to interact with local models:
-
-```python
-import ollama
-
-response = ollama.chat(model="llama3", messages=[{"role": "user", "content": "Hello!"}])
-print(response["message"]["content"])
-```
-
-See the [Ollama documentation](https://ollama.com/docs) for more details on available models and advanced usage.
 
 
 ## ☁️ Getting Azure AI Student Subscription & Provisioning Services
