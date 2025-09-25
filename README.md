@@ -180,7 +180,7 @@ To use Azure AI Search and Azure AI Document Intelligence, you need an Azure sub
     - **Resource group**: Create new or use existing
     - **Service name**: Choose a unique name
     - **Region**: Select a region
-    - **Pricing tier**: Select **Free** (limits: 3 indexes, 3 indexers, 50MB storage)
+    - **Pricing tier**: Select **Free** (limits apply)
 4. Click **Review + create** and then **Create**.
 
 ### 3. Provision Azure AI Document Intelligence (Form Recognizer)
@@ -189,7 +189,7 @@ To use Azure AI Search and Azure AI Document Intelligence, you need an Azure sub
 2. Click **Create** and fill in the required details:
     - **Resource group**: Use the same or new
     - **Region**: Select a region
-    - **Pricing tier**: Free F0 (limited pages per month)
+    - **Pricing tier**: Free F0 (limited pages per request)
     - **Resource name**: Choose a unique name
 3. Click **Review + create** and then **Create**.
 
