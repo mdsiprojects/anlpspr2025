@@ -15,6 +15,7 @@ Monday 29/09/2025
   - [2. Provision Azure AI Search (Free Tier)](#2-provision-azure-ai-search-free-tier)
   - [3. Provision Azure AI Document Intelligence (Form Recognizer)](#3-provision-azure-ai-document-intelligence-form-recognizer)
   - [4. Get Your Keys and Endpoints](#4-get-your-keys-and-endpoints)
+- [🔑 Setting Up Environment Variables](#-setting-up-environment-variables)
 
 
 > It's recommended that you fork this repo to your own GitHub account for your own use, and to get updates from the original repo once posted.
@@ -195,9 +196,31 @@ To use Azure AI Search and Azure AI Document Intelligence, you need an Azure sub
 
 ### 4. Get Your Keys and Endpoints
 
-After deployment, go to each resource and find the **Keys and Endpoint** section. You’ll need these values to connect your code to Azure services.
+After deployment, go to each resource and find the **Keys and Endpoint** section. You'll need these values to connect your code to Azure services.
 
 **Tip:** Store your keys in a `.env` file and never share them publicly.
+
+## 🔑 Setting Up Environment Variables
+
+To securely store your API keys and endpoints, create a `.env` file from the provided template:
+
+1. Copy the sample environment file:
+   ```bash
+   cp sample.env .env
+   ```
+   (Or on Windows: `copy sample.env .env`)
+
+2. Open `.env` in your text editor and replace the placeholder values with your actual keys and endpoints:
+   - Get your OpenAI keys from [OpenAI Platform Dashboard](https://platform.openai.com/account/api-keys)
+   - Get your Azure keys from the "Keys and Endpoint" section of each Azure resource
+
+3. **Important:** Never commit your `.env` file to version control. It's already included in `.gitignore` to prevent accidental commits.
+
+The [sample.env](sample.env) file includes placeholders for:
+- OpenAI API credentials
+- Azure AI Search service details
+- Azure AI Document Intelligence endpoints
+- Ollama base URL for local models
 
 
 
