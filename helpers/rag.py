@@ -13,7 +13,7 @@ import os
 from azure.search.documents import SearchClient
 from azure.search.documents.models import VectorizableTextQuery, VectorQuery, VectorizedQuery, QueryType
 
-load_dotenv(dotenv_path=".openaidev.env")
+load_dotenv()
 # %%
 
 endpoint = os.environ["AZURE_SEARCH_SERVICE_ENDPOINT"]
@@ -247,6 +247,9 @@ def stream_augmented_generation(message_history, user_query, metaprompt=GROUNDED
         if event.type == 'response.output_text.delta':
             # print(event.delta)
             yield event.delta
+
+
+
 
 
 

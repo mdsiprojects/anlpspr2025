@@ -7,7 +7,7 @@ import os
 
 
 # %%
-load_dotenv(dotenv_path=".openaidev.env", override=True)  # take environment variables from .env.
+load_dotenv(override=True)  # take environment variables from .env
 # Set the API key and endpoint
 api_key = os.getenv('OPENAI_API_KEY')
 org = os.getenv('OPENAI_ORG')
@@ -168,3 +168,6 @@ if prompt := st.chat_input("What is up?"):
         {"role": "assistant", "content": response})
 
 # %%
+
+
+
