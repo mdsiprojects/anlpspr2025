@@ -209,4 +209,4 @@ __marimo__/
 .github/copilot-instructions.md
 .vscode/settings.json
 .env
-*.env
+.*.env
